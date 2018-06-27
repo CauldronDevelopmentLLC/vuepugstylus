@@ -1,0 +1,66 @@
+//-/////////////////////////////////////////////////////////////////////////////
+//-                                                                           //
+//-               Copyright (c) 2018, Cauldron Development LLC                //
+//-                           All rights reserved.                            //
+//-                                                                           //
+//-   This file ("the software") is free software: you can redistribute it    //
+//-   and/or modify it under the terms of the GNU General Public License,     //
+//-    version 2 as published by the Free Software Foundation. You should     //
+//-    have received a copy of the GNU General Public License, version 2      //
+//-   along with the software. If not, see <http://www.gnu.org/licenses/>.    //
+//-                                                                           //
+//-   The software is distributed in the hope that it will be useful, but     //
+//-        WITHOUT ANY WARRANTY; without even the implied warranty of         //
+//-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU      //
+//-             Lesser General Public License for more details.               //
+//-                                                                           //
+//-     You should have received a copy of the GNU Lesser General Public      //
+//-              License along with the software.  If not, see                //
+//-                     <http://www.gnu.org/licenses/>.                       //
+//-                                                                           //
+//-              For information regarding this software email:               //
+//-            "Joseph Coffland" <joseph@cauldrondevelopment.com>             //
+//-                                                                           //
+//-/////////////////////////////////////////////////////////////////////////////
+
+doctype html
+html(lang="en")
+  head
+    title VuePugStylus Example Project
+    meta(charset="utf-8")
+
+    - var cdn = "//cdnjs.cloudflare.com/ajax/libs"
+    link(rel="stylesheet", type="text/css",
+      href=cdn + "/font-awesome/4.6.3/css/font-awesome.min.css")
+
+    script(src=cdn + "/jquery/3.1.1/jquery.min.js")
+    script(src=cdn + "/moment.js/2.15.1/moment.min.js")
+    script(src=cdn + "/vue/1.0.28/vue.min.js")
+
+    link(rel="stylesheet", type="text/css", href="css/style.css")
+    script(src="js/assets.js")
+
+  body
+    #header
+      h1 VuePugStylus Example Project
+
+    #content
+      hello-component
+
+      noscript
+        h1 This Web app requires Javascript.
+        p
+          | We appologize for the inconvenience but you must
+          | <a href="http://enable-javascript.com/">enable Javascript</a>
+          | to use this Web app.
+
+      #incompatible-browser
+        h1 Incompatable browser.
+        p
+          | We appologize for the inconvenience but your browser
+          | is too old to use this Web app.
+        p
+          | Please <a href="http://whatbrowser.org/">update your browser</a>.
+
+    #templates
+      include ../../build/templates.pug

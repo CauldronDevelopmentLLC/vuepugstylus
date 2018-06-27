@@ -1,0 +1,15 @@
+{
+  "name": "vuepugstylus",
+  "version": "0.0.1",
+  "repository": "https://github.com/CauldronDevelopmentLLC/vuepugstylus",
+  "license": "GPL-3.0",
+  "email": "joseph@cauldrondevelopment.com",
+  "private": false,
+  "dependencies": {
+    "pug": "",
+    "pug-cli": "",
+    "stylus": "",
+    "browserify": "",
+    "jshint": ""
+  }
+}
